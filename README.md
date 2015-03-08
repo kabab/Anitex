@@ -1,0 +1,49 @@
+
+### Examples of use
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style media="screen">
+      body {
+        margin:0;
+        padding:0;
+        background: black;
+        color: #00cc00;
+        font-size: 20px;
+        font-family: "Courier";
+      }
+
+      #test {
+        width: 70%;
+        margin-top: 80px;
+        margin-left: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="test">
+      <div id="terminal">
+        amine_
+      </div>
+    </div>
+    <script src='anitex.js'></script>
+    <script charset="utf-8">
+      var t = new Anitex('terminal');
+      t.clear();
+      t.write("Wake up, Neo...");
+      t.delay(1000);
+      t.clear();
+      t.write("The Matrix has you...");
+      t.delay(1000);
+      t.clear();
+      t.write("Follow the white rabbit.");
+      t.delay(1000);
+      t.clear();
+      t.write("Knock, knock, Neo.");
+    </script>
+  </body>
+</html>
+```
